@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './ArticleCard.css';
+
 const ArticleCard = ({ author, excerpt, title }) =>
-  <div>
-    <h1>{title}</h1>
-    Autor: {author}
-    Excerpt: {excerpt}
+  <div className="ArticleCard">
+    <div className="Title">{title}</div>
+    <div className="Author">{author}</div>
+    <div className="Excerpt">{excerpt}</div>
   </div>;
 
 ArticleCard.propTypes = {
