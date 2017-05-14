@@ -1,0 +1,19 @@
+.ArticleCard {
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+    padding: 2em;
+}
+
+.Title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.Author {
+    padding-bottom: 10px;
+    color: #757575;
+}
+
+.Excerpt {
+
+}
