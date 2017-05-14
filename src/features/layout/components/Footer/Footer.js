@@ -4,7 +4,7 @@ import './Footer.css';
 
 const Footer = () =>
   <footer className="Footer">
-    <h1>© 2017. Iván Portillo</h1>
+    © 2017. Iván Portillo
   </footer>;
 
 export default Footer;
