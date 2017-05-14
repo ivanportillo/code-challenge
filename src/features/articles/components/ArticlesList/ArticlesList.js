@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import request from '../../../../infrastructure/request';
+import Grid from '../../../../core/components/layout/Grid';
 import { ARTICLES_QUERY } from '../../../../infrastructure/request/queries';
 
 import ArticleCard from '../ArticleCard';
@@ -25,7 +26,13 @@ class ArticlesList extends Component {
   render() {
     const { articles } = this.state;
     return (
-      <div>{this.renderCards(articles)}</div>
+      <div>
+        {articles.length ?
+          <Grid columns={3} gutter={8} spaceBetween={8}>
+            {this.renderCards(articles)}
+          </Grid> : null
+        }
+      </div>
     );
   }
 }
