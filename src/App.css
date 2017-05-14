@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Josefin Slab', serif;
 }
 
 body, html, div[data-reactroot]{
