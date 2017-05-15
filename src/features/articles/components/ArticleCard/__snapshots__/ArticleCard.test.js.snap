@@ -1,0 +1,129 @@
+exports[`Article Card should render an article 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="ArticleCard">
+    <div
+        className="Title">
+        Article title
+    </div>
+    <div
+        className="Author">
+        Article author
+    </div>
+    <div
+        className="Excerpt">
+        Article excerpt
+    </div>
+</div>,
+  "nodes": Array [
+    <div
+      className="ArticleCard">
+      <div
+            className="Title">
+            Article title
+      </div>
+      <div
+            className="Author">
+            Article author
+      </div>
+      <div
+            className="Excerpt">
+            Article excerpt
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <ArticleCard
+        author="Article author"
+        excerpt="Article excerpt"
+        title="Article title" />,
+      "_debugID": 6,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "author": "Article author",
+          "excerpt": "Article excerpt",
+          "title": "Article title",
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          className="ArticleCard">
+          <div
+                    className="Title">
+                    Article title
+          </div>
+          <div
+                    className="Author">
+                    Article author
+          </div>
+          <div
+                    className="Excerpt">
+                    Article excerpt
+          </div>
+</div>,
+        "_debugID": 7,
+        "_renderedOutput": <div
+          className="ArticleCard">
+          <div
+                    className="Title">
+                    Article title
+          </div>
+          <div
+                    className="Author">
+                    Article author
+          </div>
+          <div
+                    className="Excerpt">
+                    Article excerpt
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <ArticleCard
+    author="Article author"
+    excerpt="Article excerpt"
+    title="Article title" />,
+}
+`;
