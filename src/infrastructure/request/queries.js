@@ -9,7 +9,7 @@ export const ARTICLES_QUERY = `{
 
 export const ARTICLE_QUERY = id => `
   {
-    article(id: ${id}) {
+    article(id: "${id}") {
       author
       content
       excerpt
