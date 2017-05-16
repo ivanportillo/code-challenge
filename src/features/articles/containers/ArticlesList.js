@@ -3,7 +3,7 @@ import { fetchArticles } from '../actions';
 import ArticlesList from '../components/ArticlesList';
 
 const mapStateToProps = state => ({
-  articles: state.articles,
+  articles: state.articles.articles,
 });
 
 const mapDispatchToProps = dispatch => ({
