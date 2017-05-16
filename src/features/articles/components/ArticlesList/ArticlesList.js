@@ -1,22 +1,15 @@
 import React, { Component } from 'react';
-import request from '../../../../infrastructure/request';
+import PropTypes from 'prop-types';
 import Grid from '../../../../core/components/layout/Grid';
-import { ARTICLES_QUERY } from '../../../../infrastructure/request/queries';
-
 import ArticleCard from '../ArticleCard';
 
 class ArticlesList extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      articles: [],
-    };
-  }
-
+  static propTypes = {
+    articles: PropTypes.arrayOf(PropTypes.object).isRequired,
+    fetchArticles: PropTypes.func.isRequired,
+  };
   componentWillMount() {
-    request(ARTICLES_QUERY).then(response => {
-      this.setState({ articles: response.data.articles });
-    });
+    this.props.fetchArticles();
   }
 
   renderCards = articles => articles.map(article => (
@@ -24,13 +17,13 @@ class ArticlesList extends Component {
   ));
 
   render() {
-    const { articles } = this.state;
+    const { articles } = this.props;
     return (
       <div>
         {articles.length ?
           <Grid columns={3} gutter={8} spaceBetween={8}>
             {this.renderCards(articles)}
-          </Grid> : null
+          </Grid> : <p>Loading...</p>
         }
       </div>
     );
