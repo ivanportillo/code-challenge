@@ -1,0 +1,3 @@
+export const FETCH_ARTICLES = 'articles/FETCH_ARTICLES';
+export const RECEIVE_ARTICLES = 'articles/RECEIVE_ARTICLES';
+export const RECEIVE_ARTICLES_FAILED = 'articles/RECEIVE_ARTICLES_FAILED';
