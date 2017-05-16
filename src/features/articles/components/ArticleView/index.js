@@ -1,3 +1,1 @@
-/**
- * Created by ivanportilloleal on 16/05/2017.
- */
+export { default } from './ArticleView';
